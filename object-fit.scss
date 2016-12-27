@@ -1,0 +1,22 @@
+/* 
+
+Object-fit swapper
+Author - Tristan Dwyer / @tdwyerdesign
+
+- Check if the browser supports the object-fit property. If not - hide the image and set the background image property instead for finer control
+- Swap ".my-item" with the item you want to be fitted - this should be the item containing your image
+- Current css is structured for scss/sass indentation
+
+*/
+
+.my-item {
+	background-size: cover;
+	background-position: 50% 50%;
+
+	img {
+		object-fit: cover;
+		object-position: 50% 50%;
+		height: 100%;
+		width: 100%;
+	}
+}
